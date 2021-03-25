@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<head> 
+
+    <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	/* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed ;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rosybrown;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+	</style>
+	</head>
+	
+
+    <nav>
+	
+       
+       
+    <div class="logo">
+        Women on the Road
+    </div>
+
+    <div class="topnav">
+      <ul>   
+        <li><a class="active" href="homepage.html">Home</a></li>
+        <li>
+    <div class="dropdown">
+            <button class="dropbtn">Destinations
+              <i class="fa fa-caret-down"> </i>
+            </button>
+            <div class="dropdown-content">
+              <a href="iceland.html">Iceland</a>
+              <a href="china.html">China</a>
+              <a href="contact.html">Your Suggestions...</a>
+              </li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+</div>
+
+
+</nav>
+
+
+
+<body>
+
+<div class='china-header'> 
+ CHINA
+ <h1> The world's oldest civilization, with a dazzing modern face</h1>
+</div>
+
+<div class= 'china-intro'>
+    Travelling to China may seem intimidating to solo female travellers, but the country offers rich cultural experiences and in short, is very safe. China has low crime rates, and violent crimes against tourists are particulalry rare due to harsh criminal penalities. However, you should still execrise caution in busy tourist areas as pickpocketing is still common. For female travellers, catcalling is extremely rare and considered very crude in China due to cultural norms, so you should feel comfortable in the streets alone. Hopping between Chinas major cities could not be easier or safer thanks to super-clean and safe high speed bullet trains. The country hosts impressive natural wonders, facinating antient heritage and unique cuisine wich should not be missed.
+
+</div>
+
+<div class= 'china-click-here'>
+    &starf; Click on the photos for more info on some of China's most popular sights. &starf;
+</div>
+
+
+  <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+          <img src="forbidden-city.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" width= "330" height="220">
+        </div>
+        <div class="column">
+          <img src="zhangjiajie-national-forest-park.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow" width= "330" height="220">
+        </div>
+        <div class="column">
+          <img src="the-bund.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow" width= "330" height="220">
+        </div>
+        <div class="column">
+          <img src="china-great-wall.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow" width= "330" height="220">
+        </div>
+        <div class="column">
+            <img src="terracotta-army.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow" width= "330" height="220">
+          </div>
+          <div class="column">
+            <img src="reyk-1.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow" width= "330" height="220">
+          </div>
+      </div>
+    
+    
+    
+      
+      
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext"> The Forbidden City, Beijing- UNESCO Heritage Site</div>
+            <img src="forbidden-city.jpeg" class="responsive">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext"> Zhangjiajie National Park Forest, Hunan Province </div>
+            <img src="zhangjiajie-national-forest-park.jpeg" class="responsive">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">  The Bund @ Huangpu River, Shanghai</div>
+            <img src="the-bund.jpeg" class="responsive">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext"> The Great Wall of China- 2 hours from Beijing City Centre </div>
+            <img src="china-great-wall.jpeg"  class="responsive">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext"> Terracotta Army @ Emperor Qinshihuang's Mausoleum Site Museum, Xi'an </div>
+            <img src="terracotta-army.jpeg"  class="responsive">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext"> Hong Kong Skyline- a Special Administartive Region of China</div>
+            <img src="hong-kong-skyline.jpeg"  class="responsive">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          
+
+
+          </div>
+      
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="responsive" src="forbidden-city.jpeg" onclick="currentSlide(1)" alt="The Forbidden City, Beijing">
+          </div>
+      
+          <div class="column">
+            <img class="responsive" src="zhangjiajie-national-forest-park.jpeg" onclick="currentSlide(2)" alt="Zhangjiajie-national-forest-park.jpeg">
+          </div>
+      
+          <div class="column">
+            <img class="responsive" src="the bund.jpeg" onclick="currentSlide(3)" alt="The Bund, Shanghai">
+          </div>
+      
+          <div class="column">
+            <img class="responsive" src="china-great-wall.jpeg" onclick="currentSlide(4)" alt="The Great Wall of China">
+          </div>
+
+          <div class="column">
+            <img class="responsive" src="terracotta-army.jpeg" onclick="currentSlide(5)" alt="Terracotta Army, Xi'an">
+          </div>
+
+          <div class="column">
+            <img class="responsive" src="hong-kong-skyline.jpeg" onclick="currentSlide(6)" alt="Hong Kong Skyline">
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+<div class= 'china-tips'>
+    
+    &starf; Our Top Tips &starf; 
+<ol>
+<li>Always remember to carry tissues as many public toilets to do provide toilet roll. Also, be prepared to use squat toilets in most public places</li>
+<li>Public transport in Chinese cities is the most popular way to travel. It is highly subsdised by the government so perfect for budget concious travellers. Make sure you are prepared with small change if you plan to use public buses.</li>
+<li>If you are looking for someone who speaks English, high school aged children will be likely to have the best knowlegde. </li>
+<li>Access to social media such as Facebook, Instagram and Youtube is blocked in the country. If you want to keep in touch with home or share your travel snaps you will need to download of VPN. Find more information about VPNs <a href="resources.html">here</a>. </li>
+</ol>
+</div>
+
+
+
+
+	
+<div class= 'calulator'>
+	
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">Currency Converter</h3>
+		
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h4>Calculate your budget!</h4>
+	
+			<div class="form-group">
+				<select onchange="Currency(); Calculate()" class="form-control" id="converter" style="width:30%;">
+					<option value="Dollar">Dollar</option>
+					<option value="Pound">Pound</option>
+					<option value="Euro">Euro</option>
+					
+				</select>
+				<br />
+				<input type="number" oninput="Calculate()" class="form-control" id="value1"/>
+			</div>
+			<br /><br />
+			<div class="form-group">
+				<label>Chinese Yuan</label>
+				<input type="number" class="form-control" id="value2" disabled="disabled"/>
+			</div>
+		</div>
+  </div>
+</div>
+
+<script>
+	function Currency(){
+		y = document.getElementById("converter").value;
+		return y;
+	}
+	
+	function Calculate(){
+		y = Currency();
+		
+		x = document.getElementById("value1").value;
+		
+		if(x == ""){
+			document.getElementById("value2").value = "";
+		}else{
+			switch(y){
+				case "Dollar":
+					document.getElementById("value2").value = x * 6.53;
+				break;
+				
+				case "Pound":
+					document.getElementById("value2").value = x * 8.94;
+				break;
+				
+				case "Euro":
+					document.getElementById("value2").value = x * 7.72;
+				break;
+				
+				
+			}
+		}
+	}
+</script>
+
+ 
+      
+
+
+
+      </body>
+      
+      <footer>
+      <div class="d-flex justify-content-center align-items-center">
+        <a
+          class="d-inline-flex align-items-center justify-content-center linkedin"
+          href="#"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          class="d-inline-flex align-items-center justify-content-center facebook"
+          href="#"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          class="d-inline-flex align-items-center justify-content-center instagram"
+          href="#"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <ul>
+        <li>
+          &#169; 2021 Women on the Road
+        </li>
+      </ul>
+    </footer>
+
+      </html>
