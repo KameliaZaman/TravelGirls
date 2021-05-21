@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>    
+  <head> 
+      <link rel="icon" type="image/x-icon" href="HeaderIcon.png" />
+      <title>Women on the Road</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com"> 
+      <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+      <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <style type="text/css">
+
+        .navbar{
+          background-color: palevioletred; 
+          color: white;
+          font-family: 'Dela Gothic One';
+          flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+        }
+        nav .logo{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+      display:flex;
+        flex-wrap: wrap;
+        padding: 5px;
+      }
+      .navbar-nav{
+        margin-left: 200px;
+      }
+        .nav-link{
+          float:inline-end;
+    color:white;
+    padding: 0;
+    text-decoration: none ;
+    font-size: 20px;
+    font-family: 'Dela Gothic One';
+        }
+
+        .nav-link:hover{
+          background-color:pink;
+    color:black;
+        }
+        .dropdown-item{
+            float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                font-size: 20px;
+        }
+
+        @media only screen and (max-width: 768px){
+          .navbar-nav{
+            margin-left: 0px;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      </style>
+<!-- Fixed navbar -->
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+            <div class="logo">
+                Women on the Road
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+              <span class="navbar-toggler-icon" style="background-color: palevioletred; border-radius: 15px;"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Destinations
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="iceland.html">Iceland</a>
+                    <a class="dropdown-item" href="china.html">China</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="contact.html">Your Suggestions...</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+    </nav>
+  </header>    
+
+<body>
+    <!-- Slideshow container -->
+	<div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="item-1 img-fluid d-block w-100"
+            src="img1.jpg"
+            alt=".."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="item-2 img-fluid d-block w-100"
+            src="img2.jpeg"
+            alt=".."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="item-3 img-fluid d-block w-100"
+            src="img3.jpeg"
+            alt=".."
+          />
+        </div>
+		<div class="carousel-item">
+          <img
+            class="item-4 img-fluid d-block w-100"
+            src="img4.jpeg"
+            alt=".."
+          />
+        </div>
+		<div class="carousel-item">
+          <img
+            class="item-5 img-fluid d-block w-100"
+            src="img5.jpeg"
+            alt=".."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+	</body>
+
+  <footer>      
+    <div class="d-flex justify-content-center align-items-center">
+      <a class="d-inline-flex align-items-center justify-content-center linkedin" href="#">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="d-inline-flex align-items-center justify-content-center facebook" href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="d-inline-flex align-items-center justify-content-center instagram" href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <ul>
+      <li>
+        &#169; 2021 Women on the Road
+      </li>
+    </ul>
+  </footer>
+  <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+</html>
